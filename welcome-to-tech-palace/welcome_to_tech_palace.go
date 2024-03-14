@@ -9,7 +9,16 @@ func WelcomeMessage(customer string) string {
 
 // AddBorder adds a border to a welcome message.
 func AddBorder(welcomeMsg string, numStarsPerLine int) string {
-	panic("Please implement the AddBorder() function")
+	var result string
+	for i := 0; i < numStarsPerLine; i++ {
+		result += "*"
+	}
+	result += "\n"
+	result += welcomeMsg + "\n"
+	for i := 0; i < numStarsPerLine; i++ {
+		result += "*"
+	}
+	return result
 }
 
 // CleanupMessage cleans up an old marketing message.
