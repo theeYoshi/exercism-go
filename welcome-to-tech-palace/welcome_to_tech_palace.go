@@ -2,7 +2,9 @@ package techpalace
 
 // WelcomeMessage returns a welcome message for the customer.
 func WelcomeMessage(customer string) string {
-	panic("Please implement the WelcomeMessage() function")
+	var answer string
+	answer = "Welcome to the Tech Palace, " + customer
+	return answer
 }
 
 // AddBorder adds a border to a welcome message.
