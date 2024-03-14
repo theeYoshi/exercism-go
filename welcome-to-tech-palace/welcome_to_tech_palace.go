@@ -1,9 +1,11 @@
 package techpalace
 
+import "strings"
+
 // WelcomeMessage returns a welcome message for the customer.
 func WelcomeMessage(customer string) string {
-	var answer string
-	answer = "Welcome to the Tech Palace, " + customer
+	upper := strings.ToUpper(customer)
+	answer := "Welcome to the Tech Palace, " + upper
 	return answer
 }
 
