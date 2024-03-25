@@ -9,7 +9,10 @@ func FavoriteCards() []int {
 // GetItem retrieves an item from a slice at given position.
 // If the index is out of range, we want it to return -1.
 func GetItem(slice []int, index int) int {
-
+	if index >= 0 && index < len(slice) {
+		return slice[index]
+	}
+	return -1
 }
 
 // SetItem writes an item to a slice at given position overwriting an existing value.
